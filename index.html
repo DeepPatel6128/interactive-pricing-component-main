@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <header>
+      <h3 class="heading">Simple, traffic-based pricing</h3>
+      <p class="text"><span>Sign-up for our 30-day trial.</span>No credit card required. </p>
+    </header>
+
+    <main>
+    <div class="billing-changes">
+      <p class="page-views"><span class="num-of-page" id="pages">100K  </span>Pageviews</p>
+      <span class="input">
+      <input type="range" class="price-slider" id="price-slider" min="0" max="4" value="2" aria-valuemin="-2" aria-valuemax="2" aria-valuenow="0">
+      <span class="track" id="track"></span>
+      </span>
+      <p class="pricing"><span class="amt" id="amt">$16.00</span><span class="month-or-year" id="month-or-year">/month</span></p>
+    </div>
+
+    <div class="toggle-month">
+      <span class="billing">Monthly Billing</span>
+      <span class="toggle-parent">
+      <input type="checkbox" id="toggle" class="toggle" aria-checked="false">
+      <span class="slide-circle" id="slide-circle"></span>
+      </span>
+      <span class="billing">Yearly Billing</span>
+      <span class="discount">-25%</span>
+    </div>
+
+    <hr>
+
+    <div class="ticked">
+      <div class="tick">
+        <img src="./images/icon-check.svg" alt="">
+        <span class="tick-text">Unlimited websites</span>
+      </div>
+      <div class="tick">
+        <img src="./images/icon-check.svg" alt="">
+        <span class="tick-text">100% data ownership</span>
+      </div>
+      <div class="tick">
+        <img src="./images/icon-check.svg" alt="">
+        <span class="tick-text">Email reports</span>
+      </div>
+    </div>
+    <a href= "#" class="start-link">Start my trail</a>
+    </main>
+  <!-- Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
